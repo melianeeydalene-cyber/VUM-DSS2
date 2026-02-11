@@ -90,10 +90,37 @@ print(f"Sum: {s}")
 
 #%% 5. Login
 
+username = input("What is the username ? ")
 
+password = username[::-1]
 
+word = input("What is the password ? ")
+while word!=password :
+    print("Incorrect password. Try again. ")
+    word = input("What is the password ? ")
+    
+print(f"User {username} logged in.")
 
+#%% 6. Strong Number
 
+def fact(n):
+    if n ==0:
+        return 1
+    return n*fact(n-1)
+
+N = int(input("What is the number ? "))
+
+sum_fact = 0
+
+for digit in str(N):
+    sum_fact += fact(int(digit))
+    
+if sum_fact == N:
+    print("Yes")
+else:
+    print("No")
+
+#%% 7. Vending Machine
 
 
 
