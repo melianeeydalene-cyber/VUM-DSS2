@@ -6,7 +6,7 @@ Created on Wed Feb 11 17:01:15 2026
 """
 
 #%% Task 1
-
+# this is qn update
 start = int(input("start = ? "))
 end = int(input("end = ? "))
 
