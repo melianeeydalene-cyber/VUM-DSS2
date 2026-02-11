@@ -120,8 +120,40 @@ if sum_fact == N:
 else:
     print("No")
 
-#%% 7. Vending Machine
+#%% 7. Vending Machine 
 
+coins = [0.1, 0.2, 0.5, 1, 2]
+
+money = 0
+
+command = input()
+while command != "Start":
+    coin = float(command)
+    if coin not in coins:
+        print(f"Cannot accept {coin}")
+    else:
+        money += coin
+    command = input()
+
+products = {"Nuts": 2.0, "Water": 0.7, "Crisps": 1.5, "Soda": 0.8, "Coke": 1.0}
+
+command = input()
+while command != "End":
+    prod = command
+    if prod not in products:
+        print("Invalid product")
+    else:
+        price = products[prod]
+        if price <= money:
+            money -= price
+            print(f"Purchased {prod}")
+        else:
+            print("Sorry, not enough money")
+    command = input()
+
+print(f"Change: {money:.2f}")
+    
+#it doesn't work yet, overlapping
 
 
 
