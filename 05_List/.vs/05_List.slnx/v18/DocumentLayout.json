@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\melia\\Desktop\\DSS2\\05_List\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D2AFF268-59D6-4AF7-B168-CAA4B9DCFD40}|05_List\\05_List.csproj|c:\\users\\melia\\desktop\\dss2\\05_list\\05_list\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2AFF268-59D6-4AF7-B168-CAA4B9DCFD40}|05_List\\05_List.csproj|solutionrelative:05_list\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\melia\\Desktop\\DSS2\\05_List\\05_List\\Program.cs",
+              "RelativeDocumentMoniker": "05_List\\Program.cs",
+              "ToolTip": "C:\\Users\\melia\\Desktop\\DSS2\\05_List\\05_List\\Program.cs",
+              "RelativeToolTip": "05_List\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T16:47:36.439Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
