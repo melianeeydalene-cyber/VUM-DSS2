@@ -122,7 +122,7 @@ else:
 
 #%% 7. Vending Machine 
 
-coins = [0.1, 0.2, 0.5, 1, 2]
+"""coins = [0.1, 0.2, 0.5, 1, 2]
 
 money = 0
 
@@ -151,9 +151,133 @@ while command != "End":
             print("Sorry, not enough money")
     command = input()
 
-print(f"Change: {money:.2f}")
+print(f"Change: {money:.2f}")"""
     
-#it doesn't work yet, overlapping
+#this code didn't work, it was overlapping so i tried something else :
+    
+valid_coins = [0.1, 0.2, 0.5, 1, 2]
+
+money = 0
+
+while True:
+    command = input()
+
+    if command == "Start":
+        break
+
+    coin = float(command)
+
+    if coin in valid_coins:
+        money += coin
+    else:
+        print(f"Cannot accept {coin}")
+
+products = {
+    "Nuts": 2.0,
+    "Water": 0.7,
+    "Crisps": 1.5,
+    "Soda": 0.8,
+    "Coke": 1.0
+}
+
+while True:
+    command = input()
+
+    if command == "End":
+        break
+
+    if command not in products:
+        print("Invalid product")
+        continue
+
+    price = products[command]
+
+    if money >= price:
+        money -= price
+        print(f"Purchased {command.lower()}")
+    else:
+        print("Sorry, not enough money")
+
+
+print(f"Change: {money:.2f}")
+
+#%% 8. Triangle of Numbers
+
+n = int(input())
+
+for i in range(1, n + 1):
+    print((" ".join([str(i)] * i)))
+
+#%% 9. Padawan Equipment
+
+money = float(input())
+students = int(input())
+price_saber = float(input())
+price_robe = float(input())
+price_belt = float(input())
+
+sabers_needed = int(students * 1.1 + 0.999999)  # arrondi vers le haut
+free_belts = students // 6
+
+total = (
+    sabers_needed * price_saber +
+    students * price_robe +
+    (students - free_belts) * price_belt
+)
+
+if total <= money:
+    print(f"The money is enough - it would cost {total:.2f}lv.")
+else:
+    print(f"John will need {total - money:.2f}lv more.")
+
+#%% 10. Rage Expenses
+
+lost_games = int(input())
+price_headset = float(input())
+price_mouse = float(input())
+price_keyboard = float(input())
+price_display = float(input())
+
+headset = mouse = keyboard = display = 0
+keyboard_trash_count = 0
+
+for game in range(1, lost_games + 1):
+    if game % 2 == 0:
+        headset += 1
+    if game % 3 == 0:
+        mouse += 1
+    if game % 2 == 0 and game % 3 == 0:
+        keyboard += 1
+        keyboard_trash_count += 1
+        if keyboard_trash_count % 2 == 0:
+            display += 1
+
+total = (
+    headset * price_headset +
+    mouse * price_mouse +
+    keyboard * price_keyboard +
+    display * price_display
+)
+
+print(f"Rage expenses: {total:.2f} lv.")
+
+#%% 11. Orders
+
+orders = int(input())
+total_price = 0
+
+for _ in range(orders):
+    price = float(input())
+    days = int(input())
+    capsules = int(input())
+
+    order_price = price * days * capsules
+    total_price += order_price
+
+    print(f"The price for the coffee is: ${order_price:.2f}")
+
+print(f"Total: ${total_price:.2f}")
+
 
 
 
