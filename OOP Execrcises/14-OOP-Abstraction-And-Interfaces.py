@@ -66,7 +66,6 @@ sites = input().split()
 smartphone = Smartphone()
 stationary = StationaryPhone()
 
-# Calling
 for number in numbers:
     
     # Check if the number contains only digits
